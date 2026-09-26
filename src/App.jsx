@@ -1,34 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import React from 'react'
+import { CiBookmark } from "react-icons/ci";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div>
+      <div className="parent">
+        <div className="card">
+          <div className="top">
+            <img src="https://imgs.search.brave.com/iwBe45YsJyRCNYYEFU5FSar68xdZVsQOCcmludDKOK4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/aWNvbnM4LmNvbS8z/ZC1mbHVlbmN5LzEy/MDAvYW1hem9uLmpw/Zw" alt="" />
+            <button>Save <CiBookmark size={15}  /></button>
+          </div>
+          <div className="center">
+            <h3>Amazon <span>5 days ago</span></h3>
+            <h2>Senior UI/UX Designer</h2>
+            <div>
+              <h4>Part Time</h4>
+              <h4>Senior Level</h4>
+            </div>
+          </div>
+          <div className="bottom">
+            <div>
+              <h3>$120/hr</h3>
+              <p>Mumbai, India</p>
+              
+            </div>
+            <button>Apply Now</button>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
