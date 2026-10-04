@@ -38,11 +38,11 @@ html {
   margin-bottom: 30px;
 
   img {
-    height: 42px;
-    width: 42px;
+    height: 50px;
+    width: 50px;
     border: 2px solid #dadada;
     border-radius: 50%;
-    padding: 2px;
+    padding: 5px;
   }
 
   button {
@@ -63,11 +63,12 @@ html {
 .center {
   h3 {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
+    color: #333232;
 
 
     span {
-      font-size: 10px;
+      font-size: 13px;
       font-weight: 400;
       color: #8b8b8b;
     }
@@ -75,9 +76,9 @@ html {
   }
 
   h2 {
-    font-size: 10px;
-    font-weight: 400;
-    color: #8b8b8b;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333232;
   }
 
   .tag {
@@ -85,14 +86,16 @@ html {
     gap: 5px;
     /* background-color: red; */
     margin-top: 10px;
-    
-    h4{
+
+    h4 {
       display: flex;
       align-items: center;
       border: 1px solid #dadada;
       padding: 3px 6px;
-      font-size: 10px;
+      font-size: 14px;
       font-weight: 400;
+      border-radius: 5px;
+      background-color: rgb(241, 241, 241);
     }
   }
 
@@ -107,4 +110,30 @@ html {
   justify-content: space-between;
   border-top: 2px solid #b1b1b1;
   padding-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333232;
+  }
+
+  p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #8b8b8b;
+    margin-top: 5px;
+  }
+
+  button {
+    border: none;
+    padding: 8px 17px;
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: black;
+    color: #d4caca;
+
+  }
+
 }
