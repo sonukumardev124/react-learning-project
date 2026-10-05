@@ -17,6 +17,9 @@ html {
   width: 100%;
   background-color: black;
   padding: 30px;
+  display: flex;
+  gap: 30px;
+  
 }
 
 .card {
@@ -49,15 +52,13 @@ html {
     display: flex;
     align-items: center;
     border: 1px solid #dadada;
-    padding: 3px 6px;
+    padding: 4px 8px;
     font-size: 15px;
     border-radius: 5px;
     gap: 3px;
     background-color: transparent;
     color: #b1b1b1;
   }
-
-
 }
 
 .center {
@@ -72,7 +73,6 @@ html {
       font-weight: 400;
       color: #8b8b8b;
     }
-
   }
 
   h2 {
@@ -91,15 +91,13 @@ html {
       display: flex;
       align-items: center;
       border: 1px solid #dadada;
-      padding: 3px 6px;
+      padding: 4px 8px;
       font-size: 14px;
       font-weight: 400;
       border-radius: 5px;
       background-color: rgb(241, 241, 241);
     }
   }
-
-
 }
 
 
@@ -133,7 +131,5 @@ html {
     border-radius: 5px;
     background-color: black;
     color: #d4caca;
-
   }
-
 }
