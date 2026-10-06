@@ -2,27 +2,27 @@ import React from 'react'
 import { CiBookmark } from "react-icons/ci";
 
 
-function Card() {
+function Card({ brandLogo, company, datePosted, post, tag1, tag2, pay, location }) {
     return (
             <div className="card">
                 <div>
                     <div className="top">
-                        <img src="https://imgs.search.brave.com/iwBe45YsJyRCNYYEFU5FSar68xdZVsQOCcmludDKOK4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/aWNvbnM4LmNvbS8z/ZC1mbHVlbmN5LzEy/MDAvYW1hem9uLmpw/Zw" alt="" />
+                        <img src={brandLogo} alt={company} />
                         <button>Save <CiBookmark size={15} /></button>
                     </div>
                     <div className="center">
-                        <h3>Amazon <span>5 days ago</span></h3>
-                        <h2>Senior UI/UX Designer</h2>
+                        <h3>{company} <span>{datePosted}</span></h3>
+                        <h2>{post}</h2>
                         <div className='tag'>
-                            <h4>Part-Time</h4>
-                            <h4>Senior Level</h4>
+                            <h4>{tag1}</h4>
+                            <h4>{tag2}</h4>
                         </div>
                     </div>
                 </div>
                 <div className="bottom">
                     <div>
-                        <h3>$120/hr</h3>
-                        <p>Mumbai, India</p>
+                        <h3>{pay}</h3>
+                        <p>{location}</p>
                     </div>
                     <button>Apply Now</button>
                 </div>
